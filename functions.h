@@ -1,29 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   functions.h
- * Author: Chankov
- *
- * Created on 27 вересня 2016, 16:03
+ * Author: Chankov 
+ * Provide functions for hashing input byte string 
  */
 
-#ifndef FUNCTIONS_H
-#define FUNCTIONS_H
+//---------------ror---------------
+// Rotate Right on 3 bits through Carry 
+// Input: 32 bit long 
+// Output: 32 bit long 
+unsigned long ror(unsigned long t); 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-
-
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* FUNCTIONS_H */
-
+//--------------Hashing--------------
+// Hashing input string 
+// Input: char string of MAXLENGTH 
+// Output: 32 bit long hash 
+unsigned long Hashing(char *t); 

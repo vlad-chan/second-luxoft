@@ -1,24 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /* 
  * File:   main.c
- * Author: Chankov
- *
- * Created on 27 вересня 2016, 16:02
+ * Author: Chankov 
+ * Hashing input byte string 
  */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include "functions.h"
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+//input byte string 
+#define STR         "1234567891" 
+#define STR1        "1234567890" 
+#define MAXLENGTH   16
 
-    return (EXIT_SUCCESS);
+char m[MAXLENGTH] = STR;                //Input massive
+
+int main(){ 
+    printf("string: \"%s\" => ", STR);
+    printf("0x%x\n", Hashing(STR));     //output hash of STR 
+    
+    return 0;
 }
-
