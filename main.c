@@ -10,9 +10,6 @@
 //input byte string 
 #define STR         "1234567891" 
 #define STR1        "1234567890" 
-#define MAXLENGTH   16
-
-char m[MAXLENGTH] = STR;                //Input massive
 
 int main(){ 
     printf("string: \"%s\" => ", STR);

@@ -12,6 +12,6 @@ unsigned long ror(unsigned long t);
 
 //--------------Hashing--------------
 // Hashing input string 
-// Input: char string of MAXLENGTH 
+// Input: char string 
 // Output: 32 bit long hash 
 unsigned long Hashing(char *t); 

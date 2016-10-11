@@ -15,12 +15,12 @@ unsigned long ror(unsigned long t){
     t = t >> 3; 
     tmp = tmp << 29; 
     
-    return (t |= tmp);
+    return (t | tmp);
 } 
 
 //--------------Hashing--------------
 // Hashing input string 
-// Input: char string of MAXLENGTH 
+// Input: char string 
 // Output: 32 bit long hash 
 unsigned long Hashing(char *t){
     unsigned long a, b;         //A, B
